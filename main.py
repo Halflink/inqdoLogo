@@ -1,7 +1,7 @@
 import time
 from neopixel import Neopixel
  
-numpix = 9
+numpix = 21
 pixels = Neopixel(numpix, 0, 28, "GRB")
  
 yellow = (255, 100, 0)
