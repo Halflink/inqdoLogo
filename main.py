@@ -1,31 +1,25 @@
 import time
+from JsonHandler import JsonHandler
 from neopixel import Neopixel
+from machine import Pin
 
-numpix = 63
-pixels = Neopixel(numpix, 0, 28, "GRB")
-neoPixelCharacters = [
-    ['I', [0, 8]],
-    ['N', [9, 20]],
-    ['Q', [21, 39]],
-    ['D', [40, 51]],
-    ['O', [52, 62]]
-]
+settings = JsonHandler()
+settings.print_settings()
 
-yellow = (255, 100, 0)
-orange = (255, 50, 0)
-green = (0, 255, 0)
-blue = (0, 0, 255)
-red = (255, 0, 0)
-white = (255, 255, 255)
-colour0 = white
-colour1 = blue
-colour2 = yellow
-colour3 = orange
+pixels = Neopixel(settings.numberOfPixels, settings.state, settings.pin, settings.mode)
+
+colour0 = settings.white
+colour1 = settings.blue
+colour2 = settings.yellow
+colour3 = settings.orange
 counter = 0
 useColour = colour3
 
 pixels.brightness(50)
 pixels.fill(colour0)
+
+led = Pin(25, Pin.OUT)
+led.toggle()
 
 while True:
     pixels.fill(colour0)
@@ -39,7 +33,7 @@ while True:
     elif useColour == colour1:
         useColour = colour2
 
-    for neoPixelCharacter in neoPixelCharacters:
+    for neoPixelCharacter in settings.neoPixelCharacters:
         character = neoPixelCharacter[0]
         characterPixelRange = neoPixelCharacter[1]
         pixels.set_pixel_line(characterPixelRange[0], characterPixelRange[1], useColour)
