@@ -3,22 +3,25 @@
 		"numberOfPixels": 63,
 		"state": 0,
 		"pin": 28,
-		"mode": "RGB"
+		"mode": "GRB",
+		"pixelBrightness": 50
 	},
 	"colours": {
-		"yellow": [255, 100, 0],
+		"yellow": [255, 255, 0],
 		"green": [0, 255, 0],
 		"orange": [255, 50, 0],
 		"white": [255, 255,255],
-		"blue": [0, 0, 255]
+		"blue": [0, 0, 255],
+		"red": [255, 0, 0]
 		},
-	"letters": {
+	"characters": {
 		"I": [0, 8],
 		"N": [9, 20],
 		"Q": [21, 39],
 		"D": [40, 51],
 		"O": [52, 62]
-	}
+	},
+	"ledPin": 25
 }
 
 

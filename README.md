@@ -29,10 +29,18 @@ for it. this bracket is used as a template to create a bracket per letter, which
 is basically a concatenation of multiple single pixel brackets.
 The housing for the batteries and the pico are intended to be metallic (tin) so
 they are part of the steampunk look.
+---
+## WORKINGS
+### turning on off
+To turn the logo on, flip the switch in the ON position
+
 
 ---
 ## PARTS LIST
-
+* [raspberry Pico](https://elektronicavoorjou.nl/product/raspberry-pi-pico/)
+* [Tumble switch](https://www.benselectronics.nl/mini-tuimel-schakelaar.html)
+* [Battery holder](https://www.kiwi-electronics.com/nl/3x-aaa-batterijhouder-met-jst-connector-3734?country=NL&utm_term=3734&gclid=EAIaIQobChMIt-Dz-ubwgQMVtJODBx2EGQ7QEAQYASABEgJ9JvD_BwE)
+* [NeoPixel strip](https://www.bitsandparts.nl/LED-Strip-RGB-WS2812-5V-IP67-60-LEDs-m-5-meter-zwart-p1892774)
 
 ---
 ## PROJECT PROGRESS
