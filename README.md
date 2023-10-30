@@ -32,7 +32,11 @@ they are part of the steampunk look.
 ---
 ## WORKINGS
 ### turning on off
-To turn the logo on, flip the switch in the ON position
+To turn the logo on, flip the switch in the ON position.<br>
+You could also power over the micro usb connector of the pico. 
+
+### patterns
+I created 3 different patterns, which run one after the other. 
 
 
 ---
